@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex-start;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #5C4033, #228B22, #FFD700); /* Fond dégradé de la jungle */
+
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  color: rgb(12, 9, 9);
+  margin-top: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  color: rgb(8, 7, 7);
+  margin-top: 0;
+  padding: 20px;
+}
+
+.quiz-section {
+  /* background-color: rgba(255, 255, 255, 0.8); Légère transparence pour faire ressortir la question */
+  padding: 40px;
+  /* border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.quiz-section p {
+  font-size: 34px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #228B22; /* Bord vert jungle */
+  border-radius: 15px; /* Bords arrondis */
+  outline: none;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button {
+  background: forestgreen;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 30px; /* Bords arrondis */
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour le bouton */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: lightgreen; /* Vert jungle plus prononcé au survol */
+}
+
+.hidden {
+  display: none;
+}

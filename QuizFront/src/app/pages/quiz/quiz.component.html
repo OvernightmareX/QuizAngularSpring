@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Question n°{{ indexQuestion+1 }} : </h2>
+  <app-quiz-card [question]="questions[indexQuestion]" (answerIsCorrect)="userAnswered($event)"></app-quiz-card>
+  <br>
+  <button (click)="nextQuestion()" [class]="indexQuestion >= questions.length-1 ? 'hidden' : ''">Suivant</button>
+  <button (click)="displayScore()" [class]="indexQuestion >= questions.length-1 ? '' : 'hidden'">Terminer le quiz</button>
+</div>
+
+

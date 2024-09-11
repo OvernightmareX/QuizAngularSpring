@@ -1,0 +1,18 @@
+
+<header>
+  <h1 class="main-title">Quizz Game</h1>
+</header>
+
+<body>
+<div class="container">
+  <h2>Bienvenue dans notre jeu de Quizz</h2>
+  <div class="quiz-section">
+    <p>Combien de questions souhaitez-vous ?</p>
+    <form [formGroup]="form" (ngSubmit)="validate()">
+      <label class="label"><input type="number" min="5" max="20" formControlName="quantity"></label>
+      <button>Commencer</button>
+    </form>
+  </div>
+</div>
+</body>
+

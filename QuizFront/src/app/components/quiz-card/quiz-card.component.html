@@ -1,0 +1,8 @@
+<h2>{{ question.question }}</h2>
+<div class="grid">
+    @for (answer of question.answers; track answer) {
+        <button class="card" [className]="hasAnswered && answer.correct ? 'correct' : ''" type="button" name="answer" [value]="$index" (click)="sendAnswer($event)" [disabled]="hasAnswered">
+          {{ answer.answer }}
+        </button>
+    }
+</div>
