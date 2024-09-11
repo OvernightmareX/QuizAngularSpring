@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "question": "Combien de pattes a un bipède ?",
+    "answers": [
+      {
+        "answer": "0",
+        "correct": false
+      },
+      {
+        "answer": "1",
+        "correct": false
+      },
+      {
+        "answer": "2",
+        "correct": true
+      },
+      {
+        "answer": "3",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "De quelle couleurs est la coccinelle ?",
+    "answers": [
+      {
+        "answer": "bleu",
+        "correct": false
+      },
+      {
+        "answer": "noir",
+        "correct": false
+      },
+      {
+        "answer": "rouge",
+        "correct": true
+      },
+      {
+        "answer": "blanche",
+        "correct": false
+      }
+    ]
+  }
+]
