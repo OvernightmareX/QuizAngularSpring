@@ -1,4 +1,13 @@
 <div class="container">
   <h1>Votre score est de {{ score }} / {{ totalQuestions }}</h1>
+  @if( score > totalQuestions - totalQuestions / 4) {
+    <p> Vous êtes très fort, bravo !
+  } @else if( score > totalQuestions / 2) {
+    <p>Bravo vous avez obtenu plus que la moyenne !</p>
+  } @else if( score > totalQuestions / 3) {
+    <p>Vous êtes en bonne voie, persévérez.</p>
+  } @else {
+    <p>Poursuivez vos efforts, ce sera mieux la prochaine fois</p>
+  }
   <p><button (click)="goHome()">Retour à l'accueil</button></p>
 </div>
